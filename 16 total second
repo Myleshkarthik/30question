@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int days, hours, minutes, seconds;
+    long total_seconds;
+    printf("Enter number of days: ");
+    scanf("%d", &days);
+    printf("Enter number of hours: ");
+    scanf("%d", &hours);
+    printf("Enter number of minutes: ");
+    scanf("%d", &minutes);
+
+    printf("Enter number of seconds: ");
+    scanf("%d", &seconds);
+
+    total_seconds = (days * 86400) + (hours * 3600) + (minutes * 60) + seconds;
+    printf("Total duration in seconds: %ld\n", total_seconds);
+
+    return 0;
+}
